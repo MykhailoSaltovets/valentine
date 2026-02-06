@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Plz answer</title>
+    <link rel="icon" type="image/jpeg" href="https://media.tenor.com/y6Bf2YE7a8UAAAAi/sparkling-heart-heart.gif">
+</head>
+
+    
+<body class="protest-riot-regular">
+        <h1>💖Will you be my valentine, skotinochka?💖</h1>
+        <img src="img/no.png" alt="">
+        <br><br>
+        <div class="buttons">
+        <button class="btn" id="btn1" onclick="window.location.href='yes.html'">Yes</button>
+        <button class="btn" id="no"> No</button>
+        </div>
+<script>
+    const button = document.getElementById('no');
+    button.addEventListener('mouseover', function () {
+        button.style.left = `${Math.ceil(Math.random() * 90)}%`;
+        button.style.top = `${Math.ceil(Math.random() * 90)}%`;
+    });
+    button.addEventListener('click', function () {
+        alert('Okey..... u have another chance.')
+    })
+</script>
+</body>
+</html>
